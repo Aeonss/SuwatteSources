@@ -293,7 +293,7 @@ class Template extends tachiyomi_1.TachiParsedHttpSource {
 }
 exports.Template = Template;
 
-},{"../../template/tachiyomi":5,"@suwatte/daisuke":11,"cheerio":"cheerio","moment":"moment"}],3:[function(require,module,exports){
+},{"../../template/tachiyomi":5,"@suwatte/daisuke":11,"cheerio":undefined,"moment":undefined}],3:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChapterRecognition = void 0;
@@ -651,7 +651,7 @@ class TachiParsedHttpSource extends HttpSource_1.TachiHttpSource {
 }
 exports.TachiParsedHttpSource = TachiParsedHttpSource;
 
-},{"./HttpSource":7,"cheerio":"cheerio"}],9:[function(require,module,exports){
+},{"./HttpSource":7,"cheerio":undefined}],9:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TachiSource = void 0;

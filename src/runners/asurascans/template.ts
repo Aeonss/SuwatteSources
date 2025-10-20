@@ -206,8 +206,9 @@ export class Template extends TachiParsedHttpSource {
       })
       .join("");
 
-    const regex = /https:\/\/gg\.asuracomic\.net\/storage\/media\/[^\s"\\]+/g;
-    return [...new Set(scriptsData.match(regex) || [])].splice(8);
+    const regex =
+      /https:\/\/gg\.asuracomic\.net\/storage\/media\/[^\s"\\]+\/conversions\/\d{2}-optimized\.webp/g;
+    return [...new Set(scriptsData.match(regex) || [])];
   }
 
   private normalizeImageArray(arr: any[]): string[] {

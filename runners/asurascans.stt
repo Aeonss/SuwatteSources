@@ -7,7 +7,7 @@ const template_1 = require("./template");
 const info = {
     id: "asurascans",
     name: "Asura Scans",
-    version: 0.01,
+    version: 0.02,
     website: "https://asuracomic.net",
     thumbnail: "asurascan.png",
 };
@@ -199,8 +199,8 @@ class Template extends tachiyomi_1.TachiParsedHttpSource {
             return t;
         })
             .join("");
-        const regex = /https:\/\/gg\.asuracomic\.net\/storage\/media\/[^\s"\\]+/g;
-        return [...new Set(scriptsData.match(regex) || [])].splice(8);
+        const regex = /https:\/\/gg\.asuracomic\.net\/storage\/media\/[^\s"\\]+\/conversions\/\d{2}-optimized\.webp/g;
+        return [...new Set(scriptsData.match(regex) || [])];
     }
     normalizeImageArray(arr) {
         if (!Array.isArray(arr))
